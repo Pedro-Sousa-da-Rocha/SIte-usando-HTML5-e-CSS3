@@ -1,0 +1,280 @@
+html{
+  font-size: 100%;
+}
+body{
+  background-color: #f2fffc;
+  font-family: "Crimson Text","times new roman", serif;
+  line-height: 1.5;
+    
+}
+
+p{
+  text-align:justify;
+  margin: 1rem 0;
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 0.25em;
+}
+thead th{
+  background-color: #3C1D3D;
+  color:#fff;
+  font-weight: bold;
+  padding: 1em;
+}
+
+tbody th{
+  color:#fff;
+  font-weight: bold;
+  background-color: #851944;
+  padding: 1em;
+}
+
+tbody td{
+  color:#3C1D3D;
+  background-color:#f2fffc;
+  padding: 1em;
+  text-transform: capitalize;
+  vertical-align: middle;;
+}
+
+table [rowspan]{
+  text-align: center;
+  font-style: italic;
+}
+.experiencias{
+  text-align: center;
+  margin-left: 14px;
+}
+.container >p::first-letter{
+  content:'';
+  font-size: 2rem;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+  color: #3C1D3D;
+}
+
+main,.main{
+  width: calc(100% - .9 * 300px);
+  float:left;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-style: italic;
+}
+
+ a {
+  color:#851944;
+  text-decoration: none;
+}
+
+.lista-navegacao li:nth-child(odd):hover, .lista-navegacao li:nth-child(odd):focus{
+  text-shadow: 2px 2px 5px #f00;
+  cursor: pointer;
+  transform: rotate(15deg) scale(2);
+}
+
+.lista-navegacao li:nth-child(even):hover,.lista-navegacao li:nth-child(even):focus{
+  text-shadow: 2px 2px 5px #f00;
+  cursor: pointer;
+  transform: rotate(-15deg) scale(2);
+}
+
+main a:hover ,footer a:hover {
+  color:#f00;
+  cursor: pointer;
+}
+
+cite{
+  float: right;
+  font-style: italic;
+}
+
+.container{
+  width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.sub-titulo{
+  font-size: 1.5rem;
+  clear: both;
+}
+
+.links_sociais li{
+  display: inline-block;
+  margin-top: .2em;
+  padding: .2em;
+}
+
+.links_sociais a {
+  text-decoration:none;
+  display: block;
+}
+
+.titulo-principal,.sub-titulo{
+  font-family: "Open Sans Condensed","Arial", sans-serif;
+}
+
+.titulo-principal{
+  margin-top: 0;
+  font-size: 3rem;
+  background-color: #851944;
+  text-align: center;
+  color:#fff;
+  padding: 1.5rem;
+  border-bottom: 1rem solid #000;
+  position: relative;
+}
+.titulo-principal h1{
+  text-shadow: 2px 10px #000;
+}
+.citacao{
+  margin-left: 0;
+  background-color:#D9E5E3;
+  padding: 1em;
+  border: 1ch solid #c2ccca;
+  border-right-color: #ccc455;
+  border-left-color: #ccc455;
+  border-top-color: #455ccc;
+  border-bottom-color: #455ccc;
+  width: 30ch;
+  box-sizing: border-box;
+  margin: 1em 1.2em;
+  position: relative;
+  transition: box-shadow 1s linear, transform 1s linear;
+}
+
+.citacao > p{
+  position: relative;
+}
+
+.citacao:nth-of-type(odd):hover,.citacao:nth-of-type(odd):focus{
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao:nth-of-type(even):hover,.citacao:nth-of-type(even):focus{
+  transform: scale(1.2) rotate(-10deg);
+  box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao:nth-of-type(2n+1){
+  float: right;
+}
+
+.citacao:nth-of-type(2n+2){
+  float: left;
+}
+.citacao::before{
+  content: '“';
+  font-size:10em;
+  color: #bbb;
+  top:0;
+  left: 0;
+  position: absolute;
+}
+
+.foto{
+  position: absolute;
+  top:0;
+  right:0;
+  box-sizing: border-box;
+  float:right;
+  border-left: 10px solid black;
+  border-bottom: 10px solid black;
+}
+
+.menu-navegacao{
+  position: relative;
+  top:310px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #3C1D3D;
+  color: #F2FFFC;
+  float: right;
+  box-sizing: border-box;
+  border-left: 10px solid black;
+  border-bottom: 10px solid black;
+
+}
+
+.menu-navegacao h1{
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+.lista-navegacao a{
+  font-family:"Open Sans Condensed", sans-serif;
+  color:inherit;
+  text-transform: lowercase;
+  display: inline-block;
+}
+
+.links_sociais{
+  position: relative;
+}
+
+.links_sociais a:hover::after, .links_sociais a:focus::after{
+  content: attr(data-legenda);/*Definique a legenda definida dentro dessa "pseudoclasse" é um elemento
+  customizavel. Após essa definição, colocamos, cor, largura, e posição, para o elemento.*/
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top:100%;
+  right: 0;
+  text-indent: 0;
+  width: 150%;
+  font-size: 1rem;
+}
+
+.links_sociais a {
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.github{
+  background-image: url(../img/github.png);
+}
+.twitter{
+  background-image: url(../img/twitter.png);
+}
+.linkedin{
+  background-image: url(../img/linkedin.png);
+}
+
+.rodape{
+  padding: 2rem;
+  color: #F2FFFC;
+  background-color:#000;
+  clear:both;
+}
+
+/*Estilo do Blog */
+
+.posts{
+  border-bottom: .2em inset #ccc;
+  margin: .4em;
+}
+
+.leia-mais{
+  font-size: 1.5rem;
+  margin-bottom:3rem;
+  font-weight: bold;
+  background-color:#E6E7E8;
+  padding: .1em;
+}

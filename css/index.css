@@ -1,0 +1,296 @@
+html,body {/*Esconde a barra de Rolagem para o eixo x-*/
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    -webkit-perspective: 6px;
+            perspective: 6px;/*Cria perspectiva no Body, para o efeito Paralax*/
+    -webkit-perspective-origin: 50% 160px;
+            perspective-origin: 50% 160px;/*Move a origem da perspectiva*/
+}
+
+.palavras-home {/*Declaração do ul, mantém o 3D no cálculo*/
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;/*Preserva as alterações dentro do elemento
+            para o calculo da perspectiva*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    animation: aparece 2s;
+}
+@keyframes aparece {
+  0%{
+      opacity:0;
+      transform: scale(.001);
+
+  }
+  50%{
+    opacity: .5
+    transform:scale(.01);
+  }
+
+}
+
+.palavra-home{/*Estlização dos li's*/
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  font-size: 400%;
+  color: rgba(255, 127,127,0.5);
+  position: absolute;
+
+}
+.palavra1{
+  top:24%;
+  left:23%;
+  -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+
+}
+.palavra02{
+  top:40%;
+  left:65%;
+  -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra3{
+  top:20%;
+  left:39%;
+  -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra4{
+  top:56%;
+  left:30%;
+  -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(3px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra5{
+  top:42%;
+  left:37%;
+  -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(3px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra6{
+  top:56%;
+  left:76%;
+  -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra7{
+  top:21%;
+  left:72%;
+  -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra8{
+  top:56%;
+  left:61%;
+  -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(3px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra9{
+  top:40%;
+  left:79%;
+  -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+.palavra10{
+  top:75%;
+  left:38%;
+  -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          transform: translate(-50%, -50%) translateZ(1px) rotate(-10deg) scale(.25);
+          /*Faz as alterações nas palavras para o efeito 3D, esse é dado pela
+          transformação no eixo Z.*/
+}
+/*Declarações para o efeito 3D*/
+.banner-twitter{
+  width: 14em;
+  font-size: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-family:"Shadows Into Light", cursive;
+  line-height: 1;
+  padding: 1ch 0.5ch;
+  border: 0.4ch solid black;
+  background-color: #3C1D3D;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: 0 0;/*Faz a rotação a partir do canto esquerdo superior */
+  transform: translate(6.5765em, -2.4745em) rotate(45deg);
+  /*Formula para calcular a rotação-Vertical:-1 * sen(45) * altura */
+  /*Formula para calcular a rotação-Horizontal: cos(45) * (altura -largura) + largura*/
+  animation: aparece .5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+
+}
+.sites-mara{
+  display: inline-block;
+  transform: rotate(-15deg) skew(16deg,12deg);
+}
+
+.foto-home {
+    height: 200px;
+    border-radius: 50%;
+    animation: aparece 2s;
+    animation-fill-mode: backwards;
+    animation-delay: 2.5s;
+}
+
+/*CSS do Cabeçalho*/
+.saudacao p {
+    color: #99A;
+    line-height: 1;
+}
+.subtitulo-principal{
+  font-size: 1.2rem;
+  text-align: center;
+}
+.saudacao-inicio {
+    color: #889;
+    font-size: 6rem;
+    margin-left: 2.1ch;
+}
+.saudacao-ultima-linha {
+    text-align: left;
+    display: block;
+    margin-left: 40ch;
+    margin-top: 4ch;
+}
+.saudacao strong {
+    color: #000;
+    font-size: 2.6rem;
+}
+.saudacao em {
+    color: #851944;
+    font-size: 6rem;
+
+}
+.botao-index {
+    background-color: #851944;
+    color: #FFF;
+    border: .2em solid black;
+    width: 400px;
+    display: block;
+    text-align: center;
+    margin: 7ch auto;
+    padding: 1.5ch;
+    transition:box-shadow 0.5s linear, background-color 0.5s linear;
+}
+
+a.botao-index:hover , a.botao-index:focus{
+  box-shadow: 0 0 80px #FA9;
+  background-color: #C54974;
+  color:white;
+}
+.secao-inicio h2 {
+    text-transform: uppercase;
+    font-size:3rem;
+    font-weight: bold;
+    margin-left: 1.4rem;
+    padding-top: 1.3rem;
+}
+/*CSS da 1ª sessão da Página*/
+.trabalhos {
+    background-color: #3C1D3D;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+    background-image: linear-gradient(135deg,transparent,transparent 14px,rgba(0, 0, 0, 0.1) 14px,
+    rgba(0, 0, 0, 0.1) 15px,transparent 15px,transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+
+}
+.trabalhos h2 {
+    color: #FFF;
+    font-size:3rem;
+    font-weight: bold;
+    margin-left: 1.4rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+.trabalhos ul {
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.trabalhos li {
+    flex:1;
+}
+.trabalhos li:first-child{
+  order: 2;
+  transition: transform 1s linear;
+}
+.trabalhos li:hover{
+  transform: scale(1.2);
+}
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+/*CSS da Sessão de Trabalhos do Site*/
+.blog {
+    background-color: #999;
+    color: #FFF;
+    border-bottom: 10px solid #851944;
+    position: relative;
+    background-image: linear-gradient(45deg,transparent,transparent 14px,rgba(255, 255, 255, 0.1) 14px,
+    rgba(255, 255, 255, 0.1) 15px,transparent 15px,transparent);
+   background-size: 20px 20px;
+   background-attachment: fixed;
+}
+.blog small{
+  margin-left: 1.4rem;
+
+}
+.blog li a {
+    color: #FCF;
+    display: block;
+    padding:1ch 1.5ch;
+    margin:2ch 1.2ch;
+}
+/*CSS da Seção do Blog do site. */
+footer {
+    background-color: #000;
+    color: #FFF;
+}
+
+footer h2{
+  color: #FFF;
+  font-size:4rem;
+  margin-left: 1.5ch;
+}
+footer p{
+  margin-left:7.5ch;
+}
+footer a {
+    color: #F99;
+}
+/*CSS do Footer da página*/
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}

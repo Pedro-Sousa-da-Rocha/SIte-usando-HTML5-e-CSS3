@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>João da Silva - Contato</title>
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+</head>
+<body>
+    <main>
+        <h1 class="titulo-principal">Contato</h1>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <label>
+                        <input type="radio" name="assunto" value="Blog">
+                        Blog
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Serviço">
+                        Serviço
+                    </label>
+                    <fieldset>
+                        <input type="radio" name="assunto" value="Outro" id="outro">
+                        <label for="outro">
+                            Outro
+                        </label>
+                        <input type="text" name="outro-assunto">
+                    </fieldset>
+                </fieldset>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </main>
+    <img class="foto" src="../img/eu.jpg" alt="João da Silva" />
+
+<aside class="menu-navegacao">
+
+    <h1 class="titulo-navegacao">João da Silva</h1>
+
+  <nav class="lista-navegacao">
+
+    <ul>
+
+      <li tabindex="1"><a href="index.html">Home</a></li>
+
+      <li tabindex="2"><a href="portfolio.html">Portfólio</a></li>
+
+      <li tabindex="3"><a href="bio.html">Sobre Mim</a></li>
+
+      <li tabindex="4"><a href="blog.html">Blog</a></li>
+
+      <li tabindex="5"><a href="contato.html">Contato</a></li>
+
+    </ul>
+
+  </nav>
+
+  <ul class="links_sociais">
+    <li tabindex="6"><a class="github" data-legenda="Clique aqui e veja como o código é limpo" href="#">Github</a></li>
+    <li tabindex="7"><a class="twitter" data-legenda="Meu perfil no twitter (meu próximo trabalho!)" href="#">Twitter</a></li>
+    <li tabindex="8"><a class="linkedin" data-legenda="Estou aberto a negociações!" href="#">LinkedIn</a></li>
+  </ul>
+
+</aside>
+
+<footer class="rodape">
+  &copy; João da Silva 2016!
+</footer>
+</body>
+
+
+</html>
